@@ -25,7 +25,7 @@ To execute the unit tests, just right click on the tests package and select the 
 #### Patch: Create user
 
 ```http
-  GET /users/v1
+  Patch /users/v1
 ```
 
 | Parameter | Type     | Description                       |
@@ -36,9 +36,9 @@ To execute the unit tests, just right click on the tests package and select the 
 | `phones`      | `array` | **Required**. phones of the user |
 
 ### Password criteria: 
-They have at least 8 characters long.
+It have at least 8 characters long.
 
-They are composed exclusively of upper and lower case letters, numerical digits and the special characters mentioned (!@#$%.^&*()\-+=). 
+It is composed exclusively of upper and lower case letters, numerical digits and the special characters mentioned (!@#$%.^&*()\-+=). 
 
 ### Json request example
 
@@ -80,8 +80,8 @@ They are composed exclusively of upper and lower case letters, numerical digits 
 
 **Server:** Java, JPA, gradle, JUnit5
 
-To acces swagger use: http://localhost:8081/swagger-ui/index.html
-To acces database use: http://localhost:8081/h2-console/login.jsp and use the word **password** as password. 
+To access swagger use: http://localhost:8081/swagger-ui/index.html and 
+to access database use: http://localhost:8081/h2-console/login.jsp and use the word **password** as password. 
 
 In the resources package is the class diagram. 
 
